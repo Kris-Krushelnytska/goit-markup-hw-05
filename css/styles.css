@@ -189,13 +189,15 @@ line-height: 1.5;
 letter-spacing: 0.04em;
 color: #fff;
 cursor: pointer;
-display: block;
+
 min-width: 169px;
 height: 56px;
 border: none;
 border-radius: 4px; 
 margin: 0 auto;
 transition:  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+display: block;
+margin: 0 auto;
 
 }
 
@@ -291,7 +293,7 @@ box-shadow:  0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.
 
 
 .team-image {
-   margin-bottom: 32px;
+   
  
 }
 
@@ -314,7 +316,7 @@ line-height: 1.5;
 letter-spacing: 0.02em;
 text-align: center;
 color: #434455;
-margin-bottom: 32px;
+margin-bottom: 8px;
 }
 
 .icon-list {
@@ -409,7 +411,7 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-image {
-   margin-bottom: 64px;
+  
 }
 
 .portfolio-container {
@@ -434,7 +436,7 @@ font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: #434455;
-margin-bottom: 32px;
+
 }
 
 /*FOOTER*/
@@ -452,7 +454,7 @@ margin-bottom: 32px;
 .container-footer {
    display: flex;
    align-items: baseline;
-   gap: 120px;
+   
   
 }
 
@@ -511,9 +513,31 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
  {
    background-color: #31d0aa;
 }
+
+.footer-form-box {
+   display: block;
+   
+}
    .footer-form {
+      display: flex;
+      gap: 24px;
    }
-   .sbcr-text {
+   .footer-form-text {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 1.5;
+      letter-spacing: 0.02em;
+      color: #fff;
+      
+   }
+
+   .footer-input {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      justify-content: center;
+      margin-top: 16px;
+      
    }
    .footer-form-input {
       border: 1px solid #fff;
@@ -523,9 +547,19 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
       box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);  
       background-color: transparent; 
    }
+
+   .footer-form-input, .footer-form-input::placeholder {
+      
+     font-size: 12px;
+     line-height: 2;
+     letter-spacing: 0.04em;
+     color: #fff;
+     padding-left: 16px;
+    
+   }
    .footer-btn {
       border-radius: 4px;
-      padding: 8px 24px;
+      
       width: 165px;
       height: 40px;
       background-color: #4d5ae5;
@@ -535,6 +569,10 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
       font-weight: 500;
       color: #fff
       
+   }
+   .icon-send {
+      fill: #fff;
+      padding-top: 8px;
    }
 
 .backdrop {
@@ -571,8 +609,9 @@ padding: 24px;
   border-radius: 100%;
   fill: #e7e9fc;
   margin-left: auto;
-  margin-bottom: 24px;
-
+  margin-bottom: 24px;stroke-width: 1px;
+  stroke: rgba(0, 0, 0, 0.1);
+  
 }
 
 .modal-close-btn:hover,
@@ -631,8 +670,7 @@ outline: transparent;
    transform: translateY(-50%);
 }
 
-.modal-icon:focus,
-.modal-icon:hover {
+.button-modal:hover svg {
    fill: #fff;
 }
 
@@ -680,4 +718,21 @@ gap: 8px;
    border-radius: 2px;
    border: 1px solid #404bbf;
    fill: #f4f4fd;
+}
+
+.modal-submit-button {
+   border-radius: 4px;
+   padding: 16px 32px;
+   width: 169px;
+   height: 56px;
+   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+   background-color: #4d5ae5;
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 1.5;
+   letter-spacing: 0.04em;
+   text-align: center;
+   color: #fff;
+   margin: 0 auto;
+   
 }

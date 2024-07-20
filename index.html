@@ -17,7 +17,7 @@
     <div class="container header-container">
     
       <nav class="header-nav">
-        <a class="logo header-logo" href="./index.html">Web <span class="logo-part">Studio</span></a>
+        <a class="logo header-logo" href="./index.html">Web<span class="logo-part">Studio</span></a>
         <ul class="nav-list">
           <li class="nav-item"><a class="nav-link current" href="./index.html">Studio</a></li>
           <li class="nav-item"><a class="nav-link" href="">Portfolio</a></li>
@@ -168,14 +168,14 @@
                 <li class="icon-item">
                   <a href="" class="icon-link">
                     <svg class="icon-image" width="16" height="16">
-                      <use href="/images/icons.svg#icon-facebook"></use>
+                      <use href="./images/icons.svg#icon-facebook"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="icon-item">
                   <a href="" class="icon-link">
                     <svg class="icon-image" width="16" height="16">
-                      <use href="/images/icons.svg#icon-linkedin"></use>
+                      <use href="./images/icons.svg#icon-linkedin"></use>
                     </svg>
                   </a>
                 </li>
@@ -208,14 +208,14 @@
                   <li class="icon-item">
                     <a href="" class="icon-link">
                       <svg class="icon-image" width="16" height="16">
-                        <use href="/images/icons.svg#icon-facebook"></use>
+                        <use href="./images/icons.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="icon-item">
                     <a href="" class="icon-link">
                       <svg class="icon-image" width="16" height="16">
-                        <use href="/images/icons.svg#icon-linkedin"></use>
+                        <use href="./images/icons.svg#icon-linkedin"></use>
                       </svg>
                     </a>
                   </li>
@@ -248,14 +248,14 @@
                   <li class="icon-item">
                     <a href="" class="icon-link">
                       <svg class="icon-image" width="16" height="16">
-                        <use href="/images/icons.svg#icon-facebook"></use>
+                        <use href="./images/icons.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="icon-item">
                     <a href="" class="icon-link">
                       <svg class="icon-image" width="16" height="16">
-                        <use href="/images/icons.svg#icon-linkedin"></use>
+                        <use href="./images/icons.svg#icon-linkedin"></use>
                       </svg>
                     </a>
                   </li>
@@ -363,7 +363,7 @@
   <footer class="page-footer">
     <div class="container container-footer">
       <div class="footer-info">
-      <a class="logo footer-logo" href="./index.html">Web <span class="logo-part">Studio</span></a>
+      <a class="logo footer-logo" href="./index.html">Web<span class="logo-part">Studio</span></a>
       <p class="footer-text">Increase the flow of customers and sales for your business with digital marketing & growth solutions.</p>
     </div>
 
@@ -400,14 +400,19 @@
         </li>
       </ul>
       <form class="footer-form">
-        <label for="subscribe" class="sbcr-text">Subscribe <svg class="" width="24" height="20">
-          <use href="./images/icons.svg#icon-send">
-
-          </use>
-        </svg>
-      </label>
+        <div class="footer-form-box">
+      <p class="footer-form-text">Subscribe</p>
+      <div class="footer-input">
         <input type="email" name="footer-email" id="footer-email" class="footer-form-input" placeholder="E-mail"/>
-        <button type="submit" class="footer-btn">Subscribe</button>
+        <button type="submit" class="footer-btn">Subscribe
+          <svg class="icon-send" width="24" height="24">
+            <use href="./images/icons.svg#icon-send">
+  
+            </use>
+          </svg>  
+        </button>
+      </div>
+    </div>
 
         
       </form>
@@ -418,10 +423,10 @@
   <div class="backdrop is-open">
     <div class="modal">
       <button type="button" class="modal-close-btn">
-        <a href="" class="modal-close-icon">
-          <svg class="" width="8" height="8">
+        
+          <svg class="button-modal" width="8" height="8">
         <use href="./images/icons.svg#icon-close"></use>
-      </svg></a>
+      </svg>
     </button>
     <p class="modal-title">Leave your contacts and we will call you back</p>
     <form>
@@ -480,7 +485,7 @@
  </svg></span>I accept the terms and conditions of the Privacy Policy</label>
 
  </div>
-      <button type="submit">Send</button>
+      <button type="submit" class="modal-submit-button">Send</button>
     </form>
     </div>
   </div>
