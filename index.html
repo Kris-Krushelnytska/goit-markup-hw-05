@@ -399,11 +399,13 @@
           </a>
         </li>
       </ul>
-      <form class="footer-form">
-        <div class="footer-form-box">
-      <p class="footer-form-text">Subscribe</p>
-      <div class="footer-input">
-        <input type="email" name="footer-email" id="footer-email" class="footer-form-input" placeholder="E-mail"/>
+    </div>
+      <div class="footer-form-box">
+        <p class="footer-form-text">Subscribe</p>
+        <form class="form-subscribe" name="form-subscribe">
+          <label class="subscribe-label">
+        <input type="subscribe-input" name="footer-email" id="footer-email" class="footer-form-input" placeholder="E-mail"/>
+      </label>
         <button type="submit" class="footer-btn">Subscribe
           <svg class="icon-send" width="24" height="24">
             <use href="./images/icons.svg#icon-send">
@@ -416,7 +418,7 @@
 
         
       </form>
-    </div>
+    
     
     </div>
   </footer> 
@@ -482,7 +484,7 @@
  <label for="terms" class="modal-terms-check"><span>
   <svg class="" width="10" height="8">
    <use href="./images/icons.svg#icon-check"></use>
- </svg></span>I accept the terms and conditions of the Privacy Policy</label>
+ </svg></span>I accept the terms and conditions of the <a href="#" class="accept-list"> Privacy Policy</a></label>
 
  </div>
       <button type="submit" class="modal-submit-button">Send</button>
